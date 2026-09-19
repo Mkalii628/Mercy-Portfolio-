@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #f6f1e9;
+  color: #252722;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+  width: min(92%, 650px);
+  margin: auto;
+  padding: 60px 0 30px;
+}
+
+
+/* PROFILE */
+
+.profile {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.profile-photo {
+  width: 78px;
+  height: 78px;
+
+  margin: 0 auto 20px;
+
+  display: block;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.profile h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.role {
+  font-size: 13px;
+  font-weight: 600;
+  color: #82776d;
+  margin-bottom: 15px;
+}
+
+.intro {
+  max-width: 450px;
+  margin: auto;
+
+  color: #77736d;
+  font-size: 14px;
+}
+
+
+/* PROJECTS */
+
+.projects {
+  margin-bottom: 60px;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #91887f;
+  margin-bottom: 7px;
+}
+
+.projects h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+/* PROJECT CARDS */
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  background: #fffdf9;
+
+  border: 1px solid #e2dbd2;
+  border-radius: 16px;
+
+  padding: 14px;
+  margin-bottom: 12px;
+
+  transition: 0.25s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(60, 50, 40, 0.08);
+}
+
+.project-icon {
+  width: 58px;
+  height: 58px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f1e2d4;
+
+  border-radius: 13px;
+
+  font-size: 25px;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h3 {
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.project-info p {
+  font-size: 12px;
+  color: #8a857e;
+}
+
+.arrow {
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid #ded8cf;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* SERVICES */
+
+.services {
+  margin-bottom: 60px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 17px 0;
+
+  border-bottom: 1px solid #ddd6cd;
+}
+
+.service span {
+  font-size: 11px;
+  color: #9a9289;
+}
+
+.service h3 {
+  font-size: 14px;
+}
+
+
+/* CONTACT */
+
+.contact {
+  text-align: center;
+
+  background: #3f352e;
+  color: white;
+
+  border-radius: 20px;
+
+  padding: 40px 25px;
+}
+
+.contact .label {
+  color: #d5c8bd;
+}
+
+.contact h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 32px;
+  line-height: 1.15;
+
+  margin-bottom: 15px;
+}
+
+.contact > p:not(.label) {
+  color: #ded6cf;
+
+  font-size: 13px;
+
+  max-width: 420px;
+
+  margin: 0 auto 25px;
+}
+
+
+/* CONTACT BUTTONS */
+
+.button {
+  display: inline-block;
+
+  background: #fffdf9;
+  color: #3f352e;
+
+  padding: 12px 22px;
+
+  margin: 5px;
+
+  border-radius: 100px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 25px;
+
+  color: #9a938b;
+
+  font-size: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+  .page {
+    padding-top: 40px;
+  }
+
+  .profile h1 {
+    font-size: 40px;
+  }
+
+  .projects h2 {
+    font-size: 27px;
+  }
+
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .button {
+    display: block;
+    margin: 8px auto;
+    max-width: 200px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+
+}
